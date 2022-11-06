@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    1 we have array [2,4,5,2,7,2] 4,8,5,4,7,4
+  </body>
+</html>
+<script>
+  let arr = [2, 4, 5, 2, 7, 2];
+
+  let con = arr.map(function (item) {
+    if (item % 2 == 0) {
+      return item * 2;
+    } else {
+      return item;
+    }
+  });
+
+  let fun = arr.map((num) => {
+    if (num % 2 === 0) {
+      return num * 2;
+    } else {
+      // return num;
+    }
+  });
+
+  let pan = arr.map((num) => {
+    return num % 2 === 0 ? num * 2 : num;
+  });
+
+  console.log("@SN ", con);
+  console.log("@SN ", fun);
+  console.log("@SN ", pan);
+</script>
